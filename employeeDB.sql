@@ -18,12 +18,21 @@ CREATE TABLE department (
 CREATE TABLE role (
     id INT PRIMARY KEY NULL,
     title VARCHAR(30) NULL,
-    salary DECIMAL(10,4) NULL,
+    salary DECIMAL(15,5) NULL,
     department_id INT NULL,
     PRIMARY KEY (position)
 );
 
 -- Creates the table "employee" --
 CREATE TABLE employee (
+    id INT PRIMARY KEY NULL,
+    first_name VARCHAR(30) NULL,
+    last_name VARCHAR(30) NULL,
+    role_id INT NULL,
+    manager_id INT NULL,
     PRIMARY KEY (position)
 ;)
+
+SELECT * FROM department;
+select * from role;
+select * from employee;
