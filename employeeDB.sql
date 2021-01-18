@@ -9,14 +9,14 @@ USE employee_db;
 
 -- Creates the table "department" --
 CREATE TABLE department (
-    id INT PRIMARY KEY NULL,
+    id INT PRIMARY KEY,
     name VARCHAR(30) NULL,
     PRIMARY KEY (position)
 );
 
 -- Creates the table "role" --
 CREATE TABLE role (
-    id INT PRIMARY KEY NULL,
+    id INT PRIMARY KEY,
     title VARCHAR(30) NULL,
     salary DECIMAL(15,5) NULL,
     department_id INT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE role (
 
 -- Creates the table "employee" --
 CREATE TABLE employee (
-    id INT PRIMARY KEY NULL,
+    id INT PRIMARY KEY,
     first_name VARCHAR(30) NULL,
     last_name VARCHAR(30) NULL,
     role_id INT NULL,

@@ -1,15 +1,24 @@
 {
-    "name": "employee_db",
-    "version": "1.0.0",
-    // "description": "",
-    // "main": "server.js",
-    // "scripts": {
-    //   "start": "node colleges",
-    //   "watch": "nodemon colleges"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "mysql": "^2.16.0"
-    }
-  }
+  "name": "employee-tracker-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalderonJG/Employee-Tracker-sql.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/CalderonJG/Employee-Tracker-sql/issues"
+  },
+  "homepage": "https://github.com/CalderonJG/Employee-Tracker-sql#readme"
+}
