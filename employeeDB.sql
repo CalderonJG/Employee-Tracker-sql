@@ -4,8 +4,8 @@ DROP DATABASE IF EXISTS employee_db;
 -- Creates the "employee_db" database --
 CREATE DATABASE employee_db;
 
--- Makes it so all of the following code will affect animals_db --
-USE animals_db;
+-- Makes it so all of the following code will affect employee_db --
+USE employee_db;
 
 -- Creates the table "department" --
 CREATE TABLE department (
