@@ -19,7 +19,7 @@ connection.connect(err => {
         inquirer.prompt({
                 name: "choice",
                 type: "list",
-                message: "Please select an action from the list:"
+                message: "Please select an action from the list:",
                 choices: ["Add department, role, or employee", "View department, role or employee", "Update employee role"]
             })
 
@@ -43,7 +43,7 @@ connection.connect(err => {
         inquirer.prompt({
             name: "addition",
             type: "list",
-            message: "Please select an action from the list:"
+            message: "Please select an action from the list:",
             choices: ["Add department", "Add role", "Add employee"]
         })
 
@@ -104,7 +104,7 @@ connection.connect(err => {
         inquirer.prompt({
             name: "view",
             type: "list",
-            message: "Please select an action from the list:"
+            message: "Please select an action from the list:",
             choices: ["View department", "View role", "View employee"]
         })
 
@@ -129,7 +129,7 @@ connection.connect(err => {
         inquirer.prompt({
             name: "update",
             type: "list",
-            message: "Please select an action from the list:"
+            message: "Please select an action from the list:",
             choices: ["Update department", "Update role", "Update employee"]
         })
 
@@ -191,7 +191,7 @@ function returnMenu() {
     inquirer.prompt({
         name: "return-menu",
         type: "list",
-        message: "Return to main menu?"
+        message: "Return to main menu?",
         choices: ["Yes", "No"]
     })
 
@@ -206,4 +206,5 @@ function returnMenu() {
             connection.end();
         }
     }
+
 };
