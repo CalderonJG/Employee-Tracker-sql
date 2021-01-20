@@ -50,13 +50,141 @@ connection.connect(err => {
         .then(function(answer) {
             switch (answer.addition) {
                 case "Add department":
-                //    addDept();
+                    addDept();
+                    break;
+
+                case "Add role":
+                    addRole();
+                    break;
+
+                case "Add employee":
+                    addEmployee();
+                    break;
             }
-        })
+        });
+
+        function addDept() {
+            inquirer.prompt({
+                name: "add-dept",
+                type: "input",
+                message: "Please enter a department name:"
+            })
+
+            .then(function(answer) {
+                answer['add-dept'].toString();
+            });
+        }
+
+        function addRole() {
+            inquirer.prompt({
+                name: "add-role",
+                type: "input",
+                message: "Please enter the employee\'s role:"
+            })
+
+            .then(function(answer) {
+                answer['add-role'].toString();
+            });
+        }
+
+        function addEmployee() {
+            inquirer.prompt({
+                name: "add-employee",
+                type: "input",
+                message: "Please enter the employee\'s name:"
+            })
+
+            .then(function(answer) {
+                answer['add-employee'].toString();
+            });
+        }
     }
 
     function viewChoice() {
+        inquirer.prompt({
+            name: "view",
+            type: "list",
+            message: "Please select an action from the list:"
+            choices: ["View department", "View role", "View employee"]
+        })
 
+        then(function(answer) {
+            switch (answer.view) {
+                case "View department":
+                    viewDept();
+                    break;
+
+                case "View role":
+                    viewRole();
+                    break;
+
+                case "View employee":
+                    viewEmployee();
+                    break;
+            }
+        });
+    }
+
+    function updateChoice() {
+        inquirer.prompt({
+            name: "update",
+            type: "list",
+            message: "Please select an action from the list:"
+            choices: ["Update department", "Update role", "Update employee"]
+        })
+
+        .then(function(answer) {
+            switch (answer.update) {
+                case "Update department":
+                    updateDept();
+                    break;
+
+                case "Update role":
+                    updateRole();
+                    break;
+
+                case "Update employee":
+                    updateEmployee();
+                    break;
+            }
+        });
+
+        function updateDept() {
+            inquirer.prompt({
+                name: "update-dept",
+                type: "input",
+                message: "Please update the department name:"
+            })
+
+            .then(function(answer) {
+                answer['update-dept'].toString();
+            });
+        }
+
+        function updateRole() {
+            inquirer.prompt({
+                name: "update-role",
+                type: "input",
+                message: "Please update the employee\'s role:"
+            })
+
+            .then(function(answer) {
+                answer['update-role'].toString();
+            });
+        }
+
+        function updateEmployee() {
+            inquirer.prompt({
+                name: "update-employee",
+                type: "input",
+                message: "Please update the employee\'s name:"
+            })
+
+            .then(function(answer) {
+                answer['update-employee'].toString();
+            });
+        }
+    }
     }
 
 function returnMenu() {
